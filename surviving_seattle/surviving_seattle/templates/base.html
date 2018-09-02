@@ -1,4 +1,4 @@
-{% load static wagtailuserbar %}
+{% load static wagtailuserbar bootstrap3 %}
 
 <!DOCTYPE html>
 <html class="no-js">
@@ -25,7 +25,7 @@
         {% endblock %}
     </head>
 
-    <body class="{% block body_class %}{% endblock %}">
+    <body class="{% block body_class %}{% endblock %} container">
         {% wagtailuserbar %}
 
         {% block content %}{% endblock %}
