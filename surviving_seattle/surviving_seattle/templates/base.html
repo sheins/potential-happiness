@@ -1,5 +1,5 @@
 {% load static wagtailuserbar bootstrap3 %}
-
+{% bootstrap_css %}
 <!DOCTYPE html>
 <html class="no-js">
     <head>
@@ -23,6 +23,12 @@
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
         {% endblock %}
+        <style>
+            body {
+              background-image: url("{% static 'images/cloudy.jpg' %}");
+              //photo from https://www.pexels.com/@markusspiske
+            }
+        </style>
     </head>
 
     <body class="{% block body_class %}{% endblock %} container">
