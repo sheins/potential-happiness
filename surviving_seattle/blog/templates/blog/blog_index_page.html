@@ -10,8 +10,8 @@
   <div class="intro">{{ page.body|richtext }}</div>
   <hr>
   <h2>{{ page.subtitle }}</h2>
-  {% for post in page.get_children %}
-      <h3><a href="{% pageurl post %}">{{ post.title }}</a></h3>
+  {% for post in blogpages %}
+      <h3><a href="{% pageurl post %}">{{ post.title | title }}</a></h3>
       <h4>{{ post.specific.date }}</h4>
       <p>{{ post.specific.summary }}</p>
   {% endfor %}
