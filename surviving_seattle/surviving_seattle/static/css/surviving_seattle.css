@@ -1,3 +1,18 @@
 body {
   background-size: cover;
+  background-position: right bottom;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  background-color: rgba(255,255,255,.8) ;
+}
+
+.container hr {
+  border-color: #b3b3b3;
+}
+
+.container a {
+  color: #537788;
+  font-weight: 700;
 }

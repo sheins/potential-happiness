@@ -1,4 +1,4 @@
-{% load static wagtailuserbar bootstrap3 %}
+{% load static wagtailuserbar bootstrap3 fontawesome %}
 {% bootstrap_css %}
 <!DOCTYPE html>
 <html class="no-js">
@@ -18,8 +18,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         {# Global stylesheets #}
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+        {% fontawesome_stylesheet %}
         <link rel="stylesheet" type="text/css" href="{% static 'css/surviving_seattle.css' %}">
-
         {% block extra_css %}
             {# Override this in templates to add extra stylesheets #}
         {% endblock %}
@@ -31,7 +32,7 @@
         </style>
     </head>
 
-    <body class="{% block body_class %}{% endblock %} container">
+    <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
 
         {% block content %}{% endblock %}

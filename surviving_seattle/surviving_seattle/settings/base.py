@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'modelcluster',
     'taggit',
     'bootstrap3',
+    'fontawesome',
 
     'django.contrib.admin',
     'django.contrib.auth',
