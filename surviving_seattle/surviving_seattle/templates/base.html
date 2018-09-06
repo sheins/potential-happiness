@@ -1,4 +1,4 @@
-{% load static wagtailuserbar bootstrap3 fontawesome %}
+{% load static wagtailuserbar bootstrap3 fontawesome nav_tags %}
 {% bootstrap_css %}
 <!DOCTYPE html>
 <html class="no-js">
@@ -31,7 +31,7 @@
             }
         </style>
     </head>
-
+    {% get_navbar %}
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
 

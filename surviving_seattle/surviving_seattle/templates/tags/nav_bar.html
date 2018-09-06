@@ -1,0 +1,14 @@
+{% load wagtailcore_tags static %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a href="/">
+    <img src="{% static 'images/logo.png' %}" alt="Surviving Seattle">
+  </a>
+  <ul>
+    {% for page in pages %}
+      <li class="nav-item">
+        <a href="{% pageurl page %}" class="nav=link">{{ page.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

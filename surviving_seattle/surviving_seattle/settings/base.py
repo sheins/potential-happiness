@@ -82,9 +82,16 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'libraries':{
+                'nav_tags': 'surviving_seattle.templatetags.nav_tags',
+            }
         },
     },
 ]
+
+TEMPLATE_LOADERS = (
+    'django.template.loaders.app_directories.load_template_source',
+)
 
 WSGI_APPLICATION = 'surviving_seattle.wsgi.application'
 
