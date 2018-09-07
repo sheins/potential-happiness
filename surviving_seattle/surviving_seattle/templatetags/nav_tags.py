@@ -1,6 +1,6 @@
 from django import template
 
-from wagtail.core.models import Page, Site
+from wagtail.core.models import Site
 
 register = template.Library()
 
@@ -11,5 +11,6 @@ def get_navbar():
     pages = home_page.get_children().live().in_menu()
 
     return {
+        "home_page": home_page,
         "pages": pages,
     }
